@@ -48,7 +48,7 @@ Asset Allocation: Redirect surplus cash reserves into the R&D of Product C to ca
 
 Credit Policy Maintenance: Continue the current 30-day collection standard to prevent liquidity bottlenecks.
 
-# 🚧 Challenges Overcome (For your Portfolio or GitHub README)
+# 🚧 Challenges Overcome
 When presenting these projects, employers love to see how you solved problems. Here are the most common technical hurdles for these specific dashboards and how you addressed them:
 
 1. Handling Granular Time Intelligence
