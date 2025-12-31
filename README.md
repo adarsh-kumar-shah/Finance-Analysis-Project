@@ -11,7 +11,6 @@ This project involved the development of a high-impact Financial Intelligence Sy
 | **EBITDA Margin** | `24.81%` | Healthy operational efficiency with a focus on core earnings. |
 | **Annual Revenue** | `$23.6M` | Total top-line scale for the fiscal period. |
 | **Net Cash Position** | `$0.69M` | Solid liquidity buffer after all inflows and expenditures. |
-| **Growth Velocity** | `4.18% MoM` | Consistent monthly expansion, peaking in Q4. |
 
 # 🔍 Strategic Insights & Analytical Findings
 Revenue & Budget Dynamics
