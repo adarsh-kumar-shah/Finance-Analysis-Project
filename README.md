@@ -1,74 +1,62 @@
-# Finance-Analysis-Project
+## 1. Overview
+•	The Financial Performance Dashboard provides a consolidated view of the company’s financial health across revenue, profitability, cash flow, and working capital efficiency.
 
-# 📌 Executive Overview
-This project involved the development of a high-impact Financial Intelligence System designed to provide a 360-degree view of the organization's fiscal health. By synthesizing revenue streams, liquidity metrics, and operational costs, the dashboard serves as a "single source of truth" for stakeholders to evaluate growth trajectories and budget adherence.
+•	It presents monthly data segmented by region and product/service, enabling stakeholders to track financial progress, compare actuals against budgets, and identify improvement areas.
 
-# 📈 Financial Scorecard (Key Performance Indicators)
+## 2. Key Highlights
 
-| Metric | Performance | Business Context |
-| :--- | :--- | :--- |
-| **Gross Margin %** | `45.55%` | Robust baseline profitability; strong cost-of-goods management. |
-| **EBITDA Margin** | `24.81%` | Healthy operational efficiency with a focus on core earnings. |
-| **Annual Revenue** | `$23.6M` | Total top-line scale for the fiscal period. |
-| **Net Cash Position** | `$0.69M` | Solid liquidity buffer after all inflows and expenditures. |
+Revenue Performance
+•	Total Revenue: 24M.
 
-# 🔍 Strategic Insights & Analytical Findings
-Revenue & Budget Dynamics
-Target Alignment: Using clustered column analysis, the project tracked the variance between Actuals vs. Budgets, revealing high precision in financial forecasting.
+•	Month-over-Month Growth: 4.18%.
 
-Peak Performance: Revenue reached its zenith in December, driven by seasonal product demand and aggressive sales cycles.
+•	Insight: Revenue shows consistent stability throughout the year, with a peak in November at 2.10M. While performance is steady, it consistently trails the monthly Revenue Budget of approximately 2.6M.
 
-Portfolio Strength: Product C and Service X emerged as the primary revenue engines, whereas Product A was identified as a candidate for strategic reassessment.
+Profitability Analysis
+•	Gross Margin %: 45.55%.
 
-Liquidity & Working Capital
-Cash Flow Narrative: A Waterfall Chart was utilized to visualize the bridge between opening and closing cash, highlighting disciplined expense control.
+•	EBITDA Percentage: 24.81%.
 
-Collection Efficiency: The Accounts Receivable (AR) Aging remains optimized, with a collection cycle of 26–31 days, ensuring a steady stream of working capital.
+•	Insight: The organization maintains a healthy gross margin. Gross Profit reached its highest point in September at 0.97M. The gap between Gross Profit and EBITDA represents consistent Operating Expenses (Opex) across all months.
 
-# 🛠 Technical Architecture
-Data Engineering Stack
-Power Query & Excel: Executed complex data ETL (Extract, Transform, Load) to normalize financial records and prepare the schema for modeling.
+Budget vs Actual Analysis
+•	Insight: There is a notable gap between Total Revenue (blue line) and Revenue Budget (dark blue line). While the budget is set near 2.5M–2.7M monthly, actual revenue fluctuates between 1.77M and 2.10M, indicating a need to align sales targets with market reality.
 
-Power BI: Architected the visual layer, focusing on a balance between high-level KPIs and granular drill-down capabilities.
+Revenue by Region
+•	Insight: Revenue is exceptionally well-balanced geographically. Each region (North, East, West, and South) contributes nearly equal shares, ranging from 24.4% to 25.62%, or approximately 6M each.
 
-Advanced DAX Logic
-The backbone of the analysis consists of custom Data Analysis Expressions (DAX) to handle time intelligence and ratio calculations:
+Cash Flow Insights
+•	Net Cash: 688K (0.69M).
 
-Profitability Ratios: Dynamic calculation of Gross Margin and EBITDA percentages to assess operational health.
+•	Monthly Net Cash Movement: Shows a cumulative increase throughout the year.
 
-Time Intelligence: Utilized TOTALYTD for cumulative performance tracking and VAR logic to calculate Month-over-Month (MoM) growth shifts.
+•	Insight: The waterfall chart displays steady positive movement in net cash each month, culminating in the highest total by year-end, which reflects healthy liquidity management.
 
-Liquidity Tracking: Aggregated net cash flows to monitor real-time solvency.
+Working Capital Efficiency (Aging Analysis)
+•	Insight: The majority of aging volume is sitting in the 31–60 days bucket (18K) rather than the 0–30 days bucket (11K). This suggests that while cash flow is positive, payments are slightly lagging beyond the immediate 30-day window.
 
-# 💡 Strategic Recommendations
-Margin Optimization: Investigate overhead costs to push the 24.81% EBITDA closer to the 30% mark.
+## 3. Overall Financial Health
+•	Growth: Stable monthly revenue with a significant peak in the final quarter.
 
-Asset Allocation: Redirect surplus cash reserves into the R&D of Product C to capitalize on its high market traction.
+•	Profitability: Strong Gross Margin maintained above 45%.
 
-Credit Policy Maintenance: Continue the current 30-day collection standard to prevent liquidity bottlenecks.
+•	Liquidity: Positive net cash movement indicating a strong "runway".
 
-# 🚧 Challenges Overcome
-When presenting these projects, employers love to see how you solved problems. Here are the most common technical hurdles for these specific dashboards and how you addressed them:
+•	Efficiency: Regional diversification is high, reducing dependency on any single market.
 
-1. Handling Granular Time Intelligence
-The Challenge: Calculating Week-over-Week (WoW) and Month-over-Month (MoM) growth is difficult when dates are missing or when comparing incomplete current periods to previous ones.
+•	Budget Discipline: Revenue consistently tracks below budget, suggesting an opportunity to refine forecasting.
 
-The Solution: I developed a custom Date Table and utilized advanced DAX variables (VAR) to isolate current and previous periods. This ensured that growth percentages remained accurate even when filtering by specific regions or card categories.
+## 4. Recommendations
+1.	Refine Budget Forecasting: Adjust future revenue budgets to more closely align with the historical actuals of 1.8M–2.1M per month.
+	
+2.	Optimize Opex: Since Opex remains flat regardless of profit peaks, investigate fixed costs to improve the EBITDA margin.
+	
+3.	Improve Collection Cycle: Target the 31–60 day aging bucket to shift more receivables into the 0–30 day window to accelerate cash availability.
+   
+4.	Investigate Regional Parity: Explore why all regions perform identically; there may be untapped growth potential in specific high-density markets.
+   
+## 9. Conclusion
+•	The company demonstrates robust financial health with balanced regional revenue and a positive cash trajectory.
 
-2. Data Normalization & Relationship Mapping
-The Challenge: Merging transaction-level data with static customer demographics often leads to "Many-to-Many" relationship errors or data inflation.
+•	By addressing the variance between budgeted and actual revenue and tightening the collections cycle, the business can further solidify its financial position for the coming year.
 
-The Solution: I utilized Power Query to clean and de-duplicate customer records, establishing a clean Star Schema with a 1:Many relationship. This optimized the dashboard's performance, ensuring visuals refreshed instantly even with large datasets.
-
-3. Balancing KPI Density with UI Clarity
-The Challenge: Financial dashboards often become cluttered with too many numbers, making it hard for executives to find the "Bottom Line."
-
-The Solution: I implemented a hierarchical design approach. I placed high-level KPIs (Total Revenue, Net Cash) at the top for immediate impact, used Slicers for interactive deep-dives, and employed Waterfall charts to explain the movement of cash rather than just the final balance.
-
-4. Managing Variance Analysis (Budget vs. Actual)
-The Challenge: Budget data is often at a monthly level, while Actuals are at a daily level, creating a granularity mismatch.
-
-The Solution: I engineered a common granularity level in the data model, allowing for seamless Variance % calculations that help management pinpoint exactly which months fell short of financial targets.
-
-# 🏁 Final Conclusion
-The resulting dashboard empowers the leadership team to move from reactive accounting to proactive financial management. By visualizing the relationship between revenue, profit, and cash, the organization can now make data-backed decisions regarding regional investments and cost-containment strategies.
